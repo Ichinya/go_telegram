@@ -85,8 +85,8 @@ func main() {
 	}
 	for _, update := range getUpdates.Result {
 		if strings.ToLower(update.Message.Text) == "go" {
-			// url := getUrlByMethod(methodSendMessage) + "?chat_id=" + strconv.Itoa(update.Message.Chat.Id) + "&text=go go"
-			// body := getBodyByUrl(url)
+			url := getUrlByMethod(methodSendMessage) + "?chat_id=" + strconv.Itoa(update.Message.Chat.Id) + "&text=go go"
+			body := getBodyByUrl(url)
 
 			fmt.Printf("%s", body)
 		}
