@@ -96,6 +96,7 @@ func main() {
 
 			fmt.Printf("%s", body)
 		}
+		// fix нужен offset
 	}
 
 }
